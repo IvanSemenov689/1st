@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #2d2d2d;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px black;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.logo {
+  font-family: "Sour Gummy", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.nav_btn {
+  font-family: "Sour Gummy", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.ticket_btn {
+  font-family: "Sour Gummy", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  color: #2d2d2d;
+  width: 176px;
+  height: 36px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover,
+.nav_btn:hover {
+  color: rgb(199, 199, 199);
+}
+
+.ticket_btn:hover {
+  color: rgb(202, 196, 196);
+  font-weight: 900;
+}
+
+.Welcome {
+  width: 100%;
+  height: 830px;
+  background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, #2d2d2d 100%),
+    url("chris-czermak-gZKzBhsO6KY-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  padding-top: 423px;
+  padding-left: 100px;
+  padding-right: 452px;
+  box-sizing: border-box;
+}
+
+.text {
+  margin: 0px;
+  font-family: "Sour Gummy", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.title {
+  margin: 0px;
+  font-family: "Sour Gummy", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(110%);
+}
+
+img {
+  width: 350px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.text-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.popular {
+  display: flex;
+  flex-direction: row;
+  gap: 95px;
+  margin-left: 100px;
+  margin-top: -35px;
+  margin-bottom: 55px;
+  background-color: #2d2d2d;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sunset {
+  background-image: url("https://images.unsplash.com/photo-1719866193184-e7f73c281faa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW5zJTIwc3Vuc2V0fGVufDB8fDB8fHww");
+  background-repeat: no-repeat;
+  font-family: "Sour Gummy", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  padding-left: 20px;
+  color: white;
+  background-size: cover;
+  height: 700px;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+/* .button {
+  /* background-color: #fff; */
+  /* position: relative; */
+}
+.button .text {
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: block;
+  color: white;
+  /* background-color: white; */
+  /* z-index: 2;
+  position: relative;
+  transition: font-weight 300ms; */
+}
+.button:hover .text {
+  /* font-weight: 900; */
+}
+/* .button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    45deg,
+    rgb(51, 255, 0),
+    rgb(255, 0, 0),
+    rgb(9, 255, 0)
+  );
+  background-size: 400%;
+  filter: blur(10px);
+  z-index: 1;
+}
+.button::before {
+  left: 0;
+  top: 0;
+  animation: amin 10s infinite linear;
+}
+.button::after {
+  right: 0;
+  bottom: 0;
+  animation: amin 5s infinite linear;
+}
+@keyframes amin {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+} */ */
